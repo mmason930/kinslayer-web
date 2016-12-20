@@ -108,10 +108,11 @@ for(PlayerKill playerKill : playerKills) {
       ++playersDisplayedSoFar;
     }
   }
-  
+  if(victimUser != null) {
 %>
 					<span>(<%=timeOfDeathDisp%>) <%= killerNamesDisp %> slew <%="<a href='" + WebSiteUrlUtil.getUserProfileUrl(webSupport.getInstanceDomain(), victimUser.getUserName()) + "'>" + victimUser.getUserName() + "</a>"%> for a gain of <%= totalWeavePointsTransfered %> weave point<%=totalWeavePointsTransfered == 1 ? "" : "s" %>.</span><br/>
 <%
+  }
 }
 %>
 				</div>
