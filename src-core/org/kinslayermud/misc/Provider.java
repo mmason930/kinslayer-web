@@ -29,7 +29,7 @@ public class Provider {
   
   public Connection getConnection() throws InstantiationException, IllegalAccessException, ClassNotFoundException, SQLException {
     
-    Class.forName("com.mysql.jdbc.Driver").newInstance();
+    Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
     Connection connection = DriverManager.getConnection
     (
       mysqlUrl,

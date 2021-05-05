@@ -12,12 +12,14 @@ public class KinslayerServletContext implements ServletContextListener {
   
   public void contextDestroyed(ServletContextEvent servletContextEvent) {
     
-    kinslayerServiceThread.kill();
-    try {
-      kinslayerServiceThread.join();
-    }
-    catch (InterruptedException e) {
-      e.printStackTrace();
+    if(kinslayerServiceThread != null) {
+      kinslayerServiceThread.kill();
+      try {
+        kinslayerServiceThread.join();
+      }
+      catch (InterruptedException e) {
+        e.printStackTrace();
+      }
     }
   }
 
