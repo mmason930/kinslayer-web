@@ -20,7 +20,7 @@
 
   <Service name="Catalina">
 
-    <Connector port="9116" enableLookups="false" redirectPort="10443" secretRequired="false" protocol="AJP/1.3" >
+    <Connector port="9116" address="0.0.0.0" enableLookups="false" redirectPort="10443" secretRequired="false" protocol="AJP/1.3" >
      <ApacheConfig forwardAll="true" noRoot="true" />
     </Connector>
 
