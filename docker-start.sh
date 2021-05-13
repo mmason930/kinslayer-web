@@ -9,6 +9,4 @@ sed -i 's|${DB_SCHEMA}|'"$DB_SCHEMA"'|' /webapp/conf.txt
 sed -i 's|${DB_USERNAME}|'"$DB_USERNAME"'|' /webapp/conf.txt
 sed -i 's|${DB_PASSWORD}|'"$DB_PASSWORD"'|' /webapp/conf.txt
 
-/webapp/tomcat/bin/startup.sh
-
-sleep 100000
+/webapp/tomcat/bin/catalina.sh run

@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 ARG DEBIAN_FRONTEND=noninter
-ARG TOMCAT_VERSION=8.5.65
+ARG TOMCAT_VERSION=8.5.66
 
 RUN mkdir /webapp
 WORKDIR /webapp
@@ -22,7 +22,7 @@ RUN apt install openjdk-8-jdk-headless openjdk-8-jre-headless ant ruby-full ruby
 RUN gem install sass
 RUN ant -buildfile ./archive/build/DeployWeb.xml -Dcheckout-root=/webapp/
 RUN mv View/ WebContent/
-RUN wget https://mirrors.gigenet.com/apache/tomcat/tomcat-8/v8.5.65/bin/apache-tomcat-$TOMCAT_VERSION.zip
+RUN wget https://archive.apache.org/dist/tomcat/tomcat-8/v$TOMCAT_VERSION/bin/apache-tomcat-$TOMCAT_VERSION.zip
 RUN unzip apache-tomcat-$TOMCAT_VERSION.zip
 RUN rm -f apache-tomcat-$TOMCAT_VERSION.zip
 RUN ln -s ./apache-tomcat-$TOMCAT_VERSION ./tomcat
