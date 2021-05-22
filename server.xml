@@ -29,7 +29,7 @@
                enableLookups="false" redirectPort="8443" acceptCount="100"
                connectionTimeout="20000" disableUploadTimeout="true" />
 
-    <Connector port="9118" enableLookups="false" redirectPort="8443" secretRequired="false" protocol="AJP/1.3" />
+    <Connector port="9118" address="0.0.0.0" enableLookups="false" redirectPort="8443" secretRequired="false" protocol="AJP/1.3" />
 
     <Engine name="Catalina" defaultHost="${HOSTNAME}">
 
