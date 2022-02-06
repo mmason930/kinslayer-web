@@ -14,7 +14,7 @@ if(request.getAttribute("Title") != null) {
 		<title><%=title %></title>
 		<meta http-equiv="Content-Language" content="EN" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<base href="http://<%=webSupport.getInstanceDomain() %>/" />
+		<base href="<%= request.isSecure() ? "https" : "http" %>://<%=webSupport.getInstanceDomain() %>/" />
 		<link rel="stylesheet" href="./View/Styles/style.css" type="text/css"/>
 		<link rel="stylesheet" href="./View/Styles/PlayerPortalStyles.css" type="text/css"/>
 		<link rel="stylesheet" href="./View/Styles/Admin/OList.css" type="text/css"/>

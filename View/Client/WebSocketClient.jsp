@@ -8,7 +8,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 		<meta http-equiv="content-type" content="text/html;charset=iso-8859-2" />
 		<title>KinslayerMUD - Play Now!</title>
-		<base href="http://<%=webSupport.getInstanceDomain() %>/" />
+		<base href="<%= request.isSecure() ? "https" : "http" %>://<%=webSupport.getInstanceDomain() %>/" />
 		<link rel="stylesheet" href="./View/Styles/web-socket-client-styles.css" type="text/css"/>
 		<script type="text/javascript" src="./View/JavaScript/jquery-1.8.0.js"></script>
 	<script type="text/javascript">

@@ -29,7 +29,7 @@ if(MetaDescription != null) {
 <%
 }
 %>
-		<base href="http://<%=webSupport.getInstanceDomain() %>/" />
+		<base href="<%= request.isSecure() ? "https" : "http" %>://<%=webSupport.getInstanceDomain() %>/" />
 		<link rel="stylesheet" href="./View/Styles/style.css" type="text/css"/>
 		<link rel="stylesheet" href="./View/Styles/PlayerPortalStyles.css" type="text/css"/>
 		<link rel="stylesheet" href="./View/Styles/HelpStyles.css" type="text/css"/>
