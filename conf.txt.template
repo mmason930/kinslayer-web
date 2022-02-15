@@ -2,4 +2,4 @@ InstanceDomain=${HOSTNAME}
 Mysql.Main.Url=jdbc:mysql://${DB_HOSTNAME}/${DB_SCHEMA}?useUnicode=yes&characterEncoding=UTF-8&jdbcCompliantTruncation=false&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&rewriteBatchedStatements=true
 Mysql.Main.Username=${DB_USERNAME}
 Mysql.Main.Password=${DB_PASSWORD}
-PlayerPortalServerPort=80
+PlayerPortalServerPort=443
