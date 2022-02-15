@@ -3,6 +3,7 @@
 <%
 User user = (User)request.getAttribute("User");
 String sessionId = (String)request.getAttribute("SessionId");
+String protocol = request.isSecure() ? "wss" : "ws";
 %>
 
 <script type="text/javascript">
@@ -145,7 +146,7 @@ commandProcessors["SessionID"] = function(command)
 }
 
 $(document).ready(function() {
-	socket = new WebSocket("ws://kinslayermud.org:<%=webSupport.getPlayerPortalServerPort()%>", "player-portal-protocol");
+	socket = new WebSocket(protocol + "://kinslayermud.org:<%=webSupport.getPlayerPortalServerPort()%>", "player-portal-protocol");
 
 	socket.itemTypesMap = {};
 	socket.wearTypesMap = {};
