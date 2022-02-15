@@ -42,7 +42,7 @@ commandProcessors["Save Help File"] = function(command)
 };
 
 $(document).ready(function() {
-	socket = new WebSocket("<%=protocol%>://kinslayermud.org:<%=webSupport.getPlayerPortalServerPort()%>/wsprotocol", "player-portal-protocol");
+	socket = new WebSocket("<%=protocol%>://kinslayermud.org:<%=webSupport.getPlayerPortalServerPort()%>/wsplayerportal", "player-portal-protocol");
 
 	socket.onopen = function()
 	{

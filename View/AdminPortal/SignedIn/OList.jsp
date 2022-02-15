@@ -146,7 +146,7 @@ commandProcessors["SessionID"] = function(command)
 }
 
 $(document).ready(function() {
-	socket = new WebSocket("<%=protocol%>://kinslayermud.org:<%=webSupport.getPlayerPortalServerPort()%>/wskinslayer", "player-portal-protocol");
+	socket = new WebSocket("<%=protocol%>://kinslayermud.org:<%=webSupport.getPlayerPortalServerPort()%>/wsplayerportal", "player-portal-protocol");
 
 	socket.itemTypesMap = {};
 	socket.wearTypesMap = {};
