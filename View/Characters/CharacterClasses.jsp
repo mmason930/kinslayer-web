@@ -178,7 +178,7 @@ $(document).ready(function() {
 				</div>
 
 				<div id="trollocdreadguarddescription" class="classDescription hidden">
-					Dreadguards are the channeling class of the Darkside. They are humans who have changed allegiance to the Shadow. They are able to ride horses and speak both the Trolloc and Common tongue. Their skill in the art of the One Power makes them an essential asset to the Shadow. Dreadguards who reach high rank are eventually able to advance to the status of Dreadlord.
+					Dreadguards are the channeling class of the Darkside. They are humans who have changed allegiance to the Shadow. They speak both the Trolloc and Common tongue, but have given up their ability to ride horses in exchange for Trolloc-like running abilities. Their skill in the art of the One Power makes them an essential asset to the Shadow. Dreadguards who reach high rank are eventually able to advance to the status of Dreadlord.
 				</div>
 			</div>
 			<div id="humanClassPanel" class="hidden classPanel" race="human">
