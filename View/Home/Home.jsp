@@ -9,7 +9,7 @@ List<AuctionItem> auctionItems = (List<AuctionItem>)request.getAttribute("Auctio
 Map<Integer, AuctionBid> auctionItemIdToHighestAuctionBidMap = (Map<Integer, AuctionBid>)request.getAttribute("AuctionItemIdToHighestAuctionBidMap");
 
 %>
-        <a href="./mudclient/mudclient.php" class="playNowButton">Play Now!</a>
+        <a href="./mudclient/mudclient.php" class="playNowButton"><div>Play Now!</div></a>
 
 		<div class="auctionsContainer">
 

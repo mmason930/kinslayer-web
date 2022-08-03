@@ -203,6 +203,7 @@ a:hover {
 
 .playNowButton
 {
+	position: relative;
 	color: #FFFFFF;
 	text-decoration: none;
 	display: block;
@@ -213,6 +214,13 @@ a:hover {
 	border: 1px solid #FFF;
 	width: 150px;
 	height: 25px;
+
+	div {
+		left: 50%;
+		top: 50%;
+		width: fit-content;
+		transform: translate(-50%, -50%);
+	}
 }
 
 .playNowButton:hover
