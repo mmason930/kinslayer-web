@@ -53,7 +53,7 @@ RewriteRule ^getting-started(.*)$		/?$1 [L,R=301]
 RewriteRule ^help/(.*)$		./Help.ViewHelpFile.do?HelpFilePath=$1 [QSA,L]
 RewriteRule ^help(.*)$		./Help.ViewHelpFile.do$1 [QSA,L]
 
-RewriteRule ^index.php(.*)$	/$1 [QSA,L,R=301]
+RewriteRule ^index\.php$ / [L,R=301]
 RewriteRule ^introduction-to-mining(.*)$	/? [L,R=301]
 RewriteRule ^introduction-to-smithing(.*)$	/? [L,R=301]
 RewriteRule ^introduction-to-equipment(.*)$	/? [L,R=301]
