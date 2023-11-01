@@ -214,6 +214,9 @@ a:hover {
 	border: 1px solid #FFF;
 	width: 150px;
 	height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 	div {
 		left: 50%;
