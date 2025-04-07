@@ -368,7 +368,7 @@ $(document).ready(function(){
 					</div>
 				</div>    
 				<div id="inputPanel">
-					<input id="inputWindow" type="text" />
+					<input id="inputWindow" type="text" autocomplete="off"/>
 					<div id="connectionBox"></div>
 				</div>
 			</div>
