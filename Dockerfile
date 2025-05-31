@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:24.04
 
 ARG DEBIAN_FRONTEND=noninter
 ARG TOMCAT_VERSION=8.5.66
@@ -19,6 +19,7 @@ ADD ./docker-start.sh ./docker-start.sh
 
 RUN apt update
 RUN apt install openjdk-8-jdk-headless openjdk-8-jre-headless ant ruby-full rubygems g++ make wget -y
+RUN gem install ffi -v 1.17.2
 RUN gem install sass
 RUN ant -buildfile ./archive/build/DeployWeb.xml -Dcheckout-root=/webapp/
 RUN mv View/ WebContent/
